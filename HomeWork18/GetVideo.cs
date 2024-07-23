@@ -18,7 +18,7 @@ namespace HomeWork18
             this.receiver = receiver;
             this.youtubeClient = youtubeClient;
         }
-        public async void Run()
+        public async Task Run()
         {
             var youtube = new YoutubeClient();
             var descriptionVideo = await youtube.Videos.GetAsync(receiver.adress);

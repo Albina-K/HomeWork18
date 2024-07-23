@@ -10,10 +10,10 @@ namespace HomeWork18
             YoutubeClient youtubeClient = new YoutubeClient();
             YouTubeCommand youtubeCommand = new YouTubeCommand();
 
-            GetVideo getVideo = new GetVideo(receiver, youtubeClient);
+            GetVideo getVideo = new GetVideo(receiver, youtubeClient);            
             youtubeCommand.SetCommand(getVideo);
             youtubeCommand.Run();
-
+            
             DownloadVideo downloadVideo = new DownloadVideo(receiver, youtubeClient);
             youtubeCommand.SetCommand(downloadVideo);
             youtubeCommand.Run();

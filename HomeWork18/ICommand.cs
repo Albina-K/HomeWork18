@@ -8,6 +8,6 @@ namespace HomeWork18
 {
     interface ICommand
     {
-        public void Run();
+        public Task Run();
     }
 }
